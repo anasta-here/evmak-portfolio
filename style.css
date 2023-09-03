@@ -1,0 +1,269 @@
+:root {
+    --bg: #ffffff;
+    --text-black: #000000;
+    --text-grey: #495057;
+    --bg-grey: #D5D8DA;
+    --btn-grey: #495057;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--bg);
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+
+.exp {
+    font-size: 16pt;
+    text-align: center;
+    padding: 20px;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: -50px;
+}
+
+.left-col {
+    text-align: left;
+    font-size: 17pt;
+    padding: 10px;
+}
+
+.right-col {
+    text-align: right;
+    font-size: 16pt;
+    padding: 10px;
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+    margin-left: auto;
+    width: 80%;
+    margin-top: -350px;
+}
+
+
+.image-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+img:hover {
+    transform: scale(1.01);
+    transition-duration: 0.4s;
+}
+
+img {
+    transition-duration: 0.4s;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-black);
+    transition-duration: 0.4s;
+}
+
+a:hover {
+    color: var(--text-grey);
+}
+
+/* connect.html */
+#connect {
+    margin-left: auto;
+    margin-top: -350px;
+    width: 80%;
+    font-size: 16pt;
+    line-height: 1.4;
+}
+
+#connect tr {
+    display: flex;
+    flex-direction: row;
+}
+
+#connect td:first-child {
+    width: 40%;
+    margin: 40px 0 0 40px;
+}
+
+#connect td:last-child {
+    width: 60%;
+    margin: 40px 40px 0 0;
+}
+
+#info {
+    margin: 30px 0 0 0;
+}
+
+#name {
+    margin: 20px 0 20px 0;
+}
+
+#email {
+    margin: 20px 0 20px 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+input {
+    padding: 20px;
+    width: 400px;
+}
+
+#message {
+    height: 100px;
+    margin: 20px 0 20px 0;
+}
+
+.input {
+    padding: 10px;
+    margin: 5px 0;
+    position: relative;
+}
+
+.input::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(to right, var(--bg-grey), transparent);
+    transition: width 0.7s;
+    z-index: -1;
+}
+
+.input:hover::before {
+    width: 100%;
+}
+
+.input:hover {
+    color: var(--bg);
+}
+
+#phone-number {
+    padding-top: 10px;
+}
+
+.btn {
+    margin-left: 70px;
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    width: 250px;
+    cursor: pointer;
+    color: var(--text-black);
+    transition: all 0.3s;
+    position: relative;
+}
+
+.btn span {
+    transition: all 0.3s;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: var(--btn-grey);
+    border-bottom-color: var(--btn-grey);
+    transform: scale(0.1, 1);
+}
+
+.btn:hover span {
+    letter-spacing: 2px;
+}
+
+.btn:hover::before {
+    opacity: 1; 
+    transform: scale(1, 1); 
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+}
+
+.btn:hover::after {
+    opacity: 0; 
+    transform: scale(0.1, 1);
+}
+
+/* about.html */
+#about {
+    margin-left: auto;
+    margin-top: -350px;
+    width: 80%;
+    font-size: 16pt;
+    line-height: 1.4;
+}
+
+#about tr {
+    display: flex;
+    flex-direction: row;
+}
+
+#about td:first-child {
+    width: 40%;
+    margin: 40px 0 0 40px;
+}
+
+#about td:last-child {
+    width: 60%;
+    margin: 50px 40px 0 20px;
+}
+
+.studio {
+    margin-top: 30px;
+}
+
+.text-content {
+    margin-top: 15px;
+}

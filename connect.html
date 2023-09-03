@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Evgenii Makshanov | PORTFOLIO</title>
+</head>
+<body>
+    
+    <div class="container">
+        <p class="exp"></p>
+        
+        <table id="menu">
+            <tr>
+                <td class="left-col name"><h1>Evgenii<br> Makshanov</h1></td>
+            </tr>
+            <tr>
+                <td class="right-col"><p><a href="index.html">PORTFOLIO</a></p></td>
+            </tr>
+            <tr>
+                <td class="right-col"><p><a href="connect.html">CONNECT</a></p></td>
+            </tr>
+            <tr>
+                <td class="right-col"><p>-</p></td>
+            </tr>
+            <tr>
+                <td class="right-col"><p><a href="about.html">ABOUT</a></p></td>
+            </tr>
+        </table>
+
+        <table id="connect">
+            <tr>
+                <td>
+                    <b>Connect</b><br><br> 
+                    <a href="mailto:info@evmak.com">info@evmak.com</a><br>
+                    <p id="phone-number">+7 963 654 85 25</p> 
+                </td>
+                <td>If you'd like to work together on a project, have me create something artistic for you, or want guidance through a mentoring session, please don't hesitate to get in touch. Just share all the important information, and then we can plan a time that works for both of us to talk about your ideas and what you have in mind. We can chat on the phone, use Zoom for a video call, or even meet up in person for a coffee. Thank you for being interested, and I'm looking forward to the opportunity!
+                    <p id="info">
+                        <br>
+                        <div class="input-container" id="formContainer">
+                            <b>Name</b><br>
+                            <div class="input">
+                                <input type="text" name="name" id="name" placeholder="Your name">
+                            </div>
+                            <br>
+
+                            <b>Email</b><br>
+                            <div class="input">
+                                <input type="email" name="email" id="email" placeholder="Your email">
+                            </div>
+                            <br>
+                            
+                            <b>Message</b><br>
+                            <div class="input">
+                                <input type="text" name="message" id="message" placeholder="Your message">
+                            </div>
+                            <br>
+
+                            <div class="box">
+                                <div class="btn" onclick="submitForm()">
+                                  <span>REACH OUT</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="successMessage" style="display: none;">
+                            Thank you for reaching out!
+                        </div>
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
